@@ -55,8 +55,8 @@ class mapViewController: UIViewController{
     }
 }
 extension mapViewController: CLLocationManagerDelegate {
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
         if let location = locations.last {
             let coordinate = location.coordinate
             let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
@@ -67,7 +67,6 @@ extension mapViewController: CLLocationManagerDelegate {
             mapView.addAnnotation(annotation)
             locationManager.stopUpdatingLocation()
         }
-        
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -75,8 +74,8 @@ extension mapViewController: CLLocationManagerDelegate {
     }
 }
 extension mapViewController: MKMapViewDelegate {
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
         if annotation is MKUserLocation {
             return nil
         }
@@ -97,6 +96,7 @@ extension mapViewController: MKMapViewDelegate {
     }
 }
 extension mapViewController: UIGestureRecognizerDelegate {
+    
     @objc func handleMapTap(_ gesture: UITapGestureRecognizer) {
         if gesture.state == .ended {
             let tapPoint = gesture.location(in: mapView)
