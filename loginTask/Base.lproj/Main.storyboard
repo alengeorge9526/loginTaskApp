@@ -96,12 +96,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yoh-w9-iod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-640.4580152671756" y="-278.87323943661971"/>
+            <point key="canvasLocation" x="-1480" y="-276"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Login View Controller" customClass="ViewController" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Login View Controller" customClass="SignInViewController" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,21 +192,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="DE3-Vx-U1z"/>
                     <connections>
-                        <outlet property="head" destination="h2O-Zk-L4U" id="z4p-cM-pzK"/>
-                        <outlet property="passWarning" destination="2hd-PJ-BN7" id="I5s-GO-4o8"/>
-                        <outlet property="password" destination="ZEo-ZO-QJU" id="jUK-ae-2WA"/>
-                        <outlet property="userWarning" destination="jhV-RE-NHl" id="cuV-sg-qL2"/>
-                        <outlet property="username" destination="Yxq-0y-9WZ" id="xsh-Cs-UtD"/>
+                        <outlet property="passWarningLabel" destination="2hd-PJ-BN7" id="I5s-GO-4o8"/>
+                        <outlet property="passwordTextFeild" destination="ZEo-ZO-QJU" id="jUK-ae-2WA"/>
+                        <outlet property="userWarningLabel" destination="jhV-RE-NHl" id="cuV-sg-qL2"/>
+                        <outlet property="usernameTextFeild" destination="Yxq-0y-9WZ" id="xsh-Cs-UtD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="315.26717557251908" y="-788.0281690140846"/>
+            <point key="canvasLocation" x="291" y="-818"/>
         </scene>
-        <!--Edit Dashboard-->
+        <!--Update Dashboard Viewcontroller-->
         <scene sceneID="jm5-n1-oZe">
             <objects>
-                <viewController id="Xdz-j1-6sO" customClass="editDashboard" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xdz-j1-6sO" customClass="UpdateDashboardViewcontroller" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E47-e5-8G5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +295,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didPressUpdate:" destination="Xdz-j1-6sO" eventType="touchUpInside" id="PHD-JZ-gpW"/>
-                                    <segue destination="I92-er-Gkt" kind="presentation" identifier="lastone" modalPresentationStyle="fullScreen" id="1gX-Ah-Nn2"/>
+                                    <segue destination="I92-er-Gkt" kind="presentation" identifier="dashBoard" modalPresentationStyle="fullScreen" id="1gX-Ah-Nn2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -321,22 +320,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="Hwo-Hi-ugn"/>
                     <connections>
-                        <outlet property="dob" destination="MZi-Od-G4N" id="9vR-N5-8i1"/>
-                        <outlet property="gender" destination="54L-fh-BUM" id="Yu5-4P-OfR"/>
-                        <outlet property="label1" destination="VHD-9n-aym" id="sui-PZ-mmb"/>
-                        <outlet property="location" destination="Bli-1x-Yfv" id="h5R-5T-WTO"/>
-                        <outlet property="nameFeild" destination="Avl-cV-ZLx" id="CEq-jv-5f4"/>
-                        <outlet property="phoneNumber" destination="Cqd-av-agU" id="CyL-Z8-Bop"/>
+                        <outlet property="dobTextfeild" destination="MZi-Od-G4N" id="9vR-N5-8i1"/>
+                        <outlet property="genderTextfeild" destination="54L-fh-BUM" id="Yu5-4P-OfR"/>
+                        <outlet property="locationTextfeild" destination="Bli-1x-Yfv" id="h5R-5T-WTO"/>
+                        <outlet property="nameTextfeild" destination="Avl-cV-ZLx" id="CEq-jv-5f4"/>
+                        <outlet property="phoneNumbererrorlabel" destination="VHD-9n-aym" id="sui-PZ-mmb"/>
+                        <outlet property="phoneNumbertextFeild" destination="Cqd-av-agU" id="CyL-Z8-Bop"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1F-Rk-Htf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="-765"/>
+            <point key="canvasLocation" x="1724" y="-818"/>
         </scene>
-        <!--Final1 View Controller-->
+        <!--Dashboard View Controller-->
         <scene sceneID="OeV-aw-Olz">
             <objects>
-                <viewController id="NKQ-ZE-1Dn" customClass="Final1ViewController" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NKQ-ZE-1Dn" customClass="DashboardViewController" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OuY-Fn-80R">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,23 +494,23 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="Gender" destination="f4v-fp-D6z" id="RfT-RT-ZpE"/>
-                        <outlet property="btnEdit" destination="iS7-If-rYf" id="wBC-Av-7xs"/>
-                        <outlet property="btnLogin" destination="u9v-TS-uCN" id="T16-vH-cYJ"/>
-                        <outlet property="dobField" destination="bZT-kR-lG1" id="ot8-pl-QnA"/>
-                        <outlet property="locationField" destination="xhk-qL-Zpf" id="IPh-c8-ATQ"/>
-                        <outlet property="nameField" destination="55E-j2-VVb" id="74C-lr-CWS"/>
-                        <outlet property="phoneNumber" destination="SGB-nt-D44" id="VSF-oc-Udi"/>
+                        <outlet property="dobFieldlabel" destination="bZT-kR-lG1" id="ot8-pl-QnA"/>
+                        <outlet property="editButton" destination="iS7-If-rYf" id="wBC-Av-7xs"/>
+                        <outlet property="genderFeildlabel" destination="f4v-fp-D6z" id="RfT-RT-ZpE"/>
+                        <outlet property="locationFieldlabel" destination="xhk-qL-Zpf" id="IPh-c8-ATQ"/>
+                        <outlet property="loginButton" destination="u9v-TS-uCN" id="T16-vH-cYJ"/>
+                        <outlet property="nameFieldlabel" destination="55E-j2-VVb" id="74C-lr-CWS"/>
+                        <outlet property="phonenumberFeildlabel" destination="SGB-nt-D44" id="VSF-oc-Udi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3y-ri-3do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2285" y="115"/>
+            <point key="canvasLocation" x="2518" y="-15"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="8JJ-Kf-1eE">
             <objects>
-                <viewController storyboardIdentifier="map" id="nIx-Ee-PZZ" customClass="mapViewController" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="map" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nIx-Ee-PZZ" customClass="mapViewController" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ic-e9-lBF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -579,12 +578,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glS-mM-M7i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1171.7557251908397" y="810.56338028169023"/>
+            <point key="canvasLocation" x="3439" y="-15"/>
         </scene>
         <!--ViewController1-->
         <scene sceneID="ppI-Iv-P87">
             <objects>
-                <viewController storyboardIdentifier="sign" id="NcV-J9-hup" userLabel="ViewController1" customClass="ViewController1" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sign" id="NcV-J9-hup" userLabel="ViewController1" customClass="SignUpViewController" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ixb-oJ-aL2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -622,7 +621,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="didPressLoginS:" destination="NcV-J9-hup" eventType="touchUpInside" id="8ME-fW-foS"/>
+                                            <action selector="didPressLoginS:" destination="NcV-J9-hup" eventType="touchUpInside" id="wld-WD-Oqc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -675,17 +674,17 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailMsg" destination="cWN-gp-cPS" id="s4P-NM-yOJ"/>
-                        <outlet property="emailText" destination="dhd-TS-dqz" id="qF1-W7-vzP"/>
-                        <outlet property="passMessage" destination="5EK-zz-Tya" id="sWe-NS-QYd"/>
-                        <outlet property="passwordText" destination="eDx-CV-eso" id="V8i-FA-9Tq"/>
+                        <outlet property="emailErrormessagelabel" destination="cWN-gp-cPS" id="qp7-Hx-jgf"/>
+                        <outlet property="emailTextfeild" destination="dhd-TS-dqz" id="gba-GV-DZU"/>
+                        <outlet property="passwordErrormessagelabel" destination="5EK-zz-Tya" id="fpy-B7-Fry"/>
+                        <outlet property="passwordTextfeild" destination="eDx-CV-eso" id="s5E-tf-CPN"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToSigninPage" modalPresentationStyle="fullScreen" id="dn3-vd-ZGf"/>
                         <segue destination="BYZ-38-t0r" kind="show" id="o4a-Ig-thd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6NP-gt-kwG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-460" y="740"/>
+            <point key="canvasLocation" x="-537" y="447"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mya-3J-SSz">
@@ -704,12 +703,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x8n-RF-VBT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1173" y="115"/>
+            <point key="canvasLocation" x="1543" y="-15"/>
         </scene>
-        <!--Home Controller-->
+        <!--Home Viewcontroller-->
         <scene sceneID="DZK-O4-32o">
             <objects>
-                <viewController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LGE-3J-3GU" customClass="homeController" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LGE-3J-3GU" customClass="homeViewcontroller" customModule="loginTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eZl-PF-gLs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -734,14 +733,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxA-RF-crR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2284.7328244274809" y="850"/>
+            <point key="canvasLocation" x="2517" y="723"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="F1u-wS-I3m"/>
-        <segue reference="n3Y-fy-Zuw"/>
+        <segue reference="c7r-wB-sF1"/>
         <segue reference="7B4-8f-kNi"/>
-        <segue reference="xct-Yl-6bo"/>
+        <segue reference="dn3-vd-ZGf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="107"/>
