@@ -1,0 +1,6 @@
+framework module Pods_loginTask {
+  umbrella header "Pods-loginTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
