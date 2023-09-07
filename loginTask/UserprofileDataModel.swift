@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct UserProfileDataModel {
     enum Keys: String {
         case name       = "Name"
@@ -13,7 +14,6 @@ struct UserProfileDataModel {
         case loacation   = "location"
         case gender     = "gender"
         case phone      = "phoneNumber"
- 
     }
     var name: String?
     var dateOfBirth: String?

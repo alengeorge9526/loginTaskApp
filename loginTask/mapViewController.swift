@@ -23,6 +23,7 @@ class mapViewController: UIViewController{
         SetLocationmanager()
         setMapView()
     }
+    
     @IBAction func showMap(_ sender: UIButton) {
         guard
             let latitudeStr = latTextField.text,

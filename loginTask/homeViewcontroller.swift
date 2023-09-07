@@ -11,13 +11,9 @@ import ImageIO
 class homeViewcontroller: UIViewController {
  
     @IBOutlet weak var gifView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         gifView.loadGif(name: "gifImage")
-        
     }
-    
-
-    
-
 }

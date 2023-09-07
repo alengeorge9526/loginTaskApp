@@ -8,7 +8,9 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+
 class UpdateDashboardViewcontroller: UIViewController {
+    
     let databaseReference = Database.database().reference()
     @IBOutlet weak var nameTextfeild: UITextField!
     @IBOutlet weak var dobTextfeild: UITextField!
@@ -55,7 +57,6 @@ class UpdateDashboardViewcontroller: UIViewController {
         genderPicker.delegate = self
     }
     
-    
     func fetchProfileData() {
         if let userId = currentUser?.uid {
             ref.child("users").child(userId).observeSingleEvent(of: .value) { (snapshot , _ )  in
@@ -70,7 +71,6 @@ class UpdateDashboardViewcontroller: UIViewController {
             }
         }
     }
-    
     
     @objc func datePickerValueChanged(_ sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
@@ -88,6 +88,7 @@ class UpdateDashboardViewcontroller: UIViewController {
             return false
         }
     }
+    
     func showSuccesalert() {
         let successAlert = UIAlertController(title: "Updated Successfully", message: "You have successfully updated the profile.", preferredStyle: .alert)
         successAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
@@ -96,8 +97,8 @@ class UpdateDashboardViewcontroller: UIViewController {
         self.present(successAlert, animated: true, completion: nil)
     }
 }
-
 extension UpdateDashboardViewcontroller: UIPickerViewDataSource, UIPickerViewDelegate {
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

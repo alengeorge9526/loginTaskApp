@@ -26,8 +26,6 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func didPressLoginS(_ sender: UIButton) {
-        
-        
         SVProgressHUD.show()
         guard let email = emailTextfeild.text,let password = passwordTextfeild.text
         else
